@@ -12,9 +12,11 @@ I map virtual pages to physical frames, enforce **read/write/execute** permissio
 ## Build & Run
 > Requires **gcc** and **make** (Linux/macOS or Windows via WSL/MSYS2).
 
+```bash
 make                 # build (outputs in ./bin)
 make test            # run tests (if target exists)
 ./bin/unit_tests     # or ./bin/debug, depending on starter code
+
 
 ## NOTES
 - The page table stores VALID/R/W/X bits with the PFN; get_page validates permissions before reads/writes.
