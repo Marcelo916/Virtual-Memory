@@ -12,7 +12,7 @@ I map virtual pages to physical frames, enforce **read/write/execute** permissio
 ## Build & Run
 > Requires **gcc** and **make** (Linux/macOS or Windows via WSL/MSYS2).
 
-```bash
+~~~bash
 make                 # build (outputs in ./bin)
 make test            # run tests (if target exists)
 ./bin/unit_tests     # or ./bin/debug, depending on starter code
