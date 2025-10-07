@@ -1,4 +1,4 @@
-# CST334 – PA4: Virtual Memory (Page Tables & MMU in C)
+# Virtual Memory (Page Tables & MMU in C)
 
 This assignment implements a simplified **memory management unit (MMU)**.  
 I map virtual pages to physical frames, enforce **read/write/execute** permissions via page-table bits, and translate virtual addresses to physical memory (PFN + offset). Unit tests cover frame allocation, permission checks, and byte-level reads/writes.
@@ -16,6 +16,7 @@ I map virtual pages to physical frames, enforce **read/write/execute** permissio
 make                 # build (outputs in ./bin)
 make test            # run tests (if target exists)
 ./bin/unit_tests     # or ./bin/debug, depending on starter code
+```bash
 
 ## NOTES
 - The page table stores VALID/R/W/X bits with the PFN; get_page validates permissions before reads/writes.
